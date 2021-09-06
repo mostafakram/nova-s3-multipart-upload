@@ -188,7 +188,7 @@ class NovaS3MultipartUpload extends ResourceTool
      */
     public function path($path)
     {
-        $this->storagePath = Str::of($path)->rtrim('/');
+        $this->storagePath = $path;
 
         return $this;
     }
